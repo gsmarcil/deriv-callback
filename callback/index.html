@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8"><title>callback</title>
+<pre id="o">waiting…</pre>
+<script>
+  const p = new URLSearchParams(location.search);
+  document.getElementById('o').textContent =
+    'state=' + (p.get('state')||'') + '\ncode=' + (p.get('code')||'') +
+    '\nerror=' + (p.get('error')||'');
+</script>
